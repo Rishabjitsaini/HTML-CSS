@@ -1,0 +1,127 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We'd love to hear your feedback!</p>
+
+    <form id="survey-form">
+        
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100" required>
+
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" name="role" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Full-time job</option>
+            <option value="learner">Full-time learner</option>
+            <option value="preferNot">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend this survey to others?</p>
+        <label><input type="radio" name="recommend" value="definitely" required> Definitely</label>
+        <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+        <label><input type="radio" name="recommend" value="notSure"> Not sure</label>
+
+        <p>What do you like most about our service? (Check all that apply)</p>
+        <label><input type="checkbox" name="like" value="quality"> Quality</label>
+        <label><input type="checkbox" name="like" value="speed"> Speed</label>
+        <label><input type="checkbox" name="like" value="pricing"> Pricing</label>
+        <label><input type="checkbox" name="like" value="support"> Support</label>
+
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+#title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+** end of undefined **
+
